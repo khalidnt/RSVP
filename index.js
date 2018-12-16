@@ -28,7 +28,7 @@ app.get('/', function(req, res){
 })
 
 
-app.listen(port, function () {
+app.listen(process.env.PORT, function () {
   console.log('listening on port:' + port);
 });
 //var db = require('pg');   //heroku db
