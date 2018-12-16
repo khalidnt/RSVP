@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-var event = require('../models/event');
+var guest = require('../models/guest');
 
 module.exports = router;

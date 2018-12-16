@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended:false}));
 app.use(methodOverride('_method'));
 
 var eventController = require('./controllers/eventContrroller');
-var memberController = require('./controllers/memberController');
+var memberController = require('./controllers/guestController');
 app.use('/events', eventController);
 app.use('/members', memberController);
 
