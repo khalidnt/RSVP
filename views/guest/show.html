@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>RSVP</title>
+    <title>Guests</title>
 </head>
 <body>
-    <H1>Welcome</H1>
-    <p>God is My Judge</p>
+    <div>
+        {{#guestlist}}
+        <p>Complete list of registred users {{guest}}</p>
+
+        {{/guestlist}}
+    </div>
+    
 </body>
 </html>

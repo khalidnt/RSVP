@@ -2,10 +2,9 @@ DROP TABLE IF EXISTS rsvplcious;
 CREATE DATABASE rsvplcious;
 \c rsvplcious
 
-CREATE TABLE members(
+CREATE TABLE guest(
     id serial primary Key,
     name varchar,
-    phone int(10),
     email varchar,
     password_digest varchar
 )
@@ -20,5 +19,5 @@ CREATE TABLE events(
     max_ int
 )
 
-INSERT INTO members(id, name, phone, email) VALUES ()
+INSERT INTO guest(id, name, email) VALUES ()
 INSERT INTO events(id, title, location, date, start_time, end_time) VALUES ()
