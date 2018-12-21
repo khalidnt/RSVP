@@ -4,7 +4,8 @@
   "description": "projectTwoHoneyBadgers",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node index.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +27,8 @@
     "mustache-express": "^1.2.8",
     "pg": "^7.7.1",
     "pg-promise": "^8.5.3"
-  }
+  },
+  "engine": {
+    "node" :"11.2.0"
+}
 }

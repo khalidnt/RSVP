@@ -1,6 +1,6 @@
 var express = require('express');
 var mustache = require('mustache-express');
-var port = 3000;
+var port = process.env.PORT || 3000;
 var app = express();
 
 var bodyParser = require('body-parser');
@@ -28,11 +28,6 @@ app.get('/', function(req, res){
 })
 
 
-app.listen(process.env.PORT, function () {
+app.listen(port, function () {
   console.log('listening on port:' + port);
 });
-//var db = require('pg');   //heroku db
-// var db = new db({
-//     connectionString: process.env.postgresql-polished-25751,
-//     ssl: true,
-//   });
