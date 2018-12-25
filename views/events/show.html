@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Event no {{}}</title>
+    <title>Event No. {{event.id}}</title>
 </head>
 <body>
     <div>
-    {{#eventlist}}
+    {{#event}}
         <p>{{title}}</p>
-        <p>{{location}}</p>
+        <!-- <p>{{location}}</p>
         <p>{{date}}</p>
         <p>{{start_time}}</p>
-        <p>{{end_time}}</p>
+        <p>{{end_time}}</p> -->
         <!-- <p> // of guests </p> -->
 
-    {{/eventlist}}
+    {{/event}}
     </div>
 </body>
 </html>

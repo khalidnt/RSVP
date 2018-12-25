@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS rsvplciousa;
-CREATE DATABASE rsvplciousa;
-\c rsvplciousa
+DROP DATABASE IF EXISTS rsvplcious;
+CREATE DATABASE rsvplcious;
+\c rsvplcious
 
 CREATE TABLE guests(
     id serial primary Key,
