@@ -6,6 +6,7 @@ var guest = require('../models/guest');
 router.get('/', guest.getAll, renderIndex);
 
 router.get('/:id', guest.getById, renderShow);
+router.get('/:id'. guest.update, renderShow);
 
 function renderIndex(req, res){
     var mustacheVariables = {

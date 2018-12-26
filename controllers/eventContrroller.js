@@ -23,4 +23,5 @@ function renderShow(req, res){
     res.render('./events/show', mustacheVariables);
 }
 
+
 module.exports = router;

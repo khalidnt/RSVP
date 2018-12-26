@@ -27,6 +27,19 @@ guest.getById = function (req, res, next) {
         })
 }      
 
+guest.update = function(req, res, next){
+    db.one(`UPDATE guests SET name = $1, email =$2 WHERE id=$3 RETURNING id;`, [req.body.name], [req.body.email], [req.params.id])
+    .then(function(result){
+        res.locals.guest = result;
+        next();
+    })
+    .catch(function(error){
+        console.log(error);
+        next();
+    })
+}
+
+
 
 
 
