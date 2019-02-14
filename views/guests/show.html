@@ -8,7 +8,11 @@
 </head>
 <body>
     <div>
-
+        <form action="/login?_method=DELETE" method="POST">
+            <button type="submit">Log Out</button>
+          </form>
+          <h1>User Email: {{user.email}}</h1>
+          <h1>User password digest: {{user.password_digest}}</h1>
     </div>
 </body>
 </html>

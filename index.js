@@ -23,10 +23,12 @@ var guestController = require('./controllers/guestController');
 app.use('/events', eventController);
 app.use('/guests', guestController);
 
-app.get('/', function(req, res){
-  res.render('./index');
-})
-
+var session = require('express-session')
+app.use(session({
+  secret: 'where in the world is carmen san diego',
+  resave: true,
+  saveUninitialized: true
+}));
 
 app.listen(port, function () {
   console.log('listening on port:' + port);

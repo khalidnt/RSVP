@@ -5,7 +5,9 @@ CREATE DATABASE rsvplcious;
 CREATE TABLE guests(
     id serial primary Key,
     name varchar,
-    email varchar
+    email varchar,
+    password_digest varchar NOT NULL
+
     
 );
 
